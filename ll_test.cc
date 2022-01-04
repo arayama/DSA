@@ -49,7 +49,12 @@ int main()
 	
 	sort(&start); 
 	printList(start);
-	
+
+	if(search(start, 50)==true)
+		cout<<"Found\n";
+	else
+		cout<<"Not Found\n";
+		
 	return 1;
 
 }

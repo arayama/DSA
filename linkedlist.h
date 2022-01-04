@@ -175,6 +175,20 @@ void sort(linkedlist <T> **start) // increasing order
 
 }
 
+template <class T>
+bool search(linkedlist <T> *start, T val)
+{
+	linkedlist<T> *temp = start;
+
+	while(temp != NULL)
+	{
+		if(temp->getData() == val)
+			return true;
+		temp=temp->getNext();
+	}
+	return false; 
+}
+
 
 
 template <class T>
