@@ -2,7 +2,7 @@
 //  front points to the front element 
 // back points to one element after the current last element 
 #include<iostream> 
-#define MAXX 10
+#define MAXX 40
 
 
 template <class T>
@@ -54,5 +54,9 @@ class queue
 			return NULL; 
 	}
 
+	T getfront()
+	{
+		return(val[front]); 
+	}
 };
 
